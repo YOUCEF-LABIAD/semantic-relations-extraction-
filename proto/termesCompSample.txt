@@ -1,0 +1,25 @@
+// Sortie des vedettes de JeuxDeMots (JDM-LEXICALNET-FR/20230829-LEXICALNET-JEUXDEMOTS-ENTRIES-MWE.txt)
+// Date : Tuesday 29th of August 2023 06:20:30 PM
+// Contact : mathieu.lafourcade@lirmm.fr
+// Web : http://www.jeuxdemots.org
+// Mathieu Lafourcade / LIRMM / Université de Montpellier / 2007-2020 
+// This contents is Public Domain (C0) / Le contenu de ce fichier est domaine public (licence C0) 
+ 
+// Format :
+// id;terme;{terme formatté};
+
+
+9;"avant toute chose";
+15;"sir Sacheverell Sitwell";
+16;"Maria Callas";
+21;"Marcel Gotlieb Gotlib";
+23;"art et architecture catalans";
+24;"American Friends Service Committee";
+32;"Alexander Roslin";
+39;"représentation nationale";
+44;"Phaseolus vulgaris";
+46;"Serment des Horaces";
+51;"Moshe Ben Maimon";
+53;"par réduction";
+54;"Robert Surcouf";
+56;"tache de rousseur";

@@ -1,0 +1,60 @@
+S: GN; GNS GVS; GNP GVP
+GN: GNMS GNMP GNFS GNFP
+GNMS: 'Det:MAS+SG' 'nom:MAS+SG' ;  detMS nomMS propque; detMS nomMS propquiS;
+GNMP:detMP nomMP;   detMP nomMP propque; detMS nomMS propquiP;
+GNFS:detFS nomFS;   detFS nomFS propque; detMS nomMS propquiS;
+GNFP:detFS nomFS;   detFS nomFS propque; detMS nomMS propquiP;          
+GVS: verbeS gn; 
+GVP: verbeP gn 
+porpque: "que" GNS GVS; "que" GNP GVP; "que" GVS GNS; "que" GVP GNP;    
+propquiS: "qui" GVS
+propquiP: "qui" GVP
+
+possessifs: "avec"...
+pronons
+adjectif
+verbe conjuges?
+
+
+
+
+
+si mot compose et mot r_relation xxx, alors ot compose r-relation xxx
+si groupe nominal, extraire nom r-agent (verbe du GV associe) 
+si groupe verbal, extraire: verbe r-patient nom
+
+
+
+def S(phrase):
+    if GN(phrase):
+        do smt
+    for i in range(1, len(phrase)):
+        if GNS(phrase[,i]) and GVS(phrase[i+1,]):
+            do smt
+    for i in range(1, len(phrase)):
+        if GNP(phrase[,i]) and GVP(phrase[i+1,]):
+            do smt
+
+
+
+def GNMS (phrase):
+    if len(phrase) == 2:
+        mot1=phrase[0]
+        mot2=phrase[1]
+        if ('Det:MAS+SG' in mot1.getTypes()) and ('nom:MAS+SG' in mot2.getTypes()):
+            return true
+        else:
+            negativer les mauvaise relation dans mot1.types et mot2.types
+            return false
+    if len(phrase) > 2:
+        mot1=phrase[0]
+        mot2=phrase[1]
+        mot3=phrase[2,]
+        if detMS nomMS and propque(mot3):
+            return true
+        elseif detMS nomMS propque(mot3):
+            return true
+        else:
+            return false
+    else:
+        return false
